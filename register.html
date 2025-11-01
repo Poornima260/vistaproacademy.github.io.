@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Register - Vista Pro Academy</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <div class="logo">VP</div>
+        <div>
+          <div class="title">Vista Pro Academy</div>
+          <div style="font-size:12px;color:#cfe7ff">SQL for Data Analytics</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="register.html" class="button">Register Now 🚀</a>
+        <a href="course.html">Course</a>
+        <a href="trainer.html">Trainer</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section style="margin-top:20px">
+      <div class="card">
+        <h2 style="color:var(--yellow);margin-top:0">Register for Free SQL Demo</h2>
+        <p>Fill in your details and get the Zoom link instantly via email.</p>
+
+        <!-- Simple form that opens your Google Form link in a new tab. 
+             Replace the 'GOOGLE_FORM_LINK' below with your actual Google Form URL for automatic storage and email automation. -->
+        <form id="reg" action="GOOGLE_FORM_LINK" method="get" target="_blank">
+          <label style="display:block;margin-top:12px">Full Name *</label>
+          <input name="name" required style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);width:100%"/>
+          <label style="display:block;margin-top:12px">Email Address *</label>
+          <input name="email" type="email" required style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);width:100%"/>
+          <label style="display:block;margin-top:12px">Phone Number *</label>
+          <input name="phone" required style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);width:100%"/>
+          <label style="display:block;margin-top:12px">Current Status *</label>
+          <select name="status" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);width:100%">
+            <option>Student</option><option>Working Professional (IT)</option><option>Working Professional (Non-IT)</option>
+          </select>
+          <label style="display:block;margin-top:12px">What's your goal? *</label>
+          <select name="goal" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);width:100%">
+            <option>Learn SQL for Data Analytics</option><option>Switch to Data Analyst Role</option><option>Upskill / Career Growth</option><option>Others</option>
+          </select>
+
+          <div style="margin-top:14px;display:flex;gap:8px">
+            <button class="btn" type="submit">🚀 Register Now & Get Zoom Link</button>
+            <button class="btn" type="button" onclick="openWhatsapp()">Questions? Message Us</button>
+          </div>
+        </form>
+
+        <p style="margin-top:12px;color:#cfe7ff">Note: Replace the form action with your Google Form link to automatically collect responses & emails.</p>
+      </div>
+    </section>
+
+    <footer class="footer">© 2025 Vista Pro Academy</footer>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
